@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_default" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/money_layout"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="@string/text_amount_of_money"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/money_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/money_dollars"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/standard_dollar"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/money_cents"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/standard_cent"
+            android:inputType="numberDecimal"
+            android:maxLength="2"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/money_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_ready"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/money_layout"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:onClick="onReadyClick"
+        android:text="@string/button_ready_for_transfer"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

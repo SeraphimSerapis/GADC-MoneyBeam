@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MoneyBeam</string>
+    <string name="mime">application/paypal-moneybeam</string>
+    <!-- BEAM SCREEN -->
+    <string name="text_amount_of_money">Please enter the amount of money you want to request via MoneyBeam</string>
+    <string name="button_ready_for_transfer">Ready for request</string>
+    <string name="button_cancel_please">Cancel please</string>
+    <string name="button_pay_with_paypal">Pay with PayPal</string>
+    <string name="toast_valid_money">Please enter a valid amount of money</string>
+    <string name="beam_title">Android Beam&#8482;</string>
+    <string name="beam_message">Touch your phones to request %1$s from another user of MoneyBeam</string>
+
+    <!-- REQUEST SCREEN -->
+    <string name="xy_wants_z_dollar_from_you">%1$s wants %2$s from you</string>
+    <string name="text_received_request">Received request</string>
+    <string name="standard_dollar">0000</string>
+    <string name="standard_cent">00</string>
+
+    <!-- PAYPAL -->
+    <string name="paypal_success">Payment succeeded</string>
+    <string name="paypal_failed">Payment failed</string>
+    <string name="paypal_canceled">Payment canceled</string>
+
+    <!-- AUTH SCREEN -->
+    <string name="messageLogin">Please authenticate yourself with your PayPal account credentials.</string>
+    <string name="hint_email">Enter your email for requests</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="login">Login</string>
+
+    <!-- GENERAL FOO -->
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="nfc_not_available">NFC is not available</string>
+
+</resources>
